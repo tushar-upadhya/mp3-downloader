@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mogra&family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    background: linear-gradient(45deg, #4158d0, #c850c0, #ffcc70);
+    color: #ffff;
+}
+
+.app {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-family: "Mogra", cursive;
+    font-weight: bold;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.contentTitle {
+    font-weight: 700px;
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.contentDescription {
+    font-weight: 500;
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .formInput {
+    max-width: 500px;
+    min-width: 300px;
+    height: 38px;
+    background: white;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.form .formButton {
+    width: 100px;
+    height: 30px;
+    background: #5269b0;
+    border: none;
+    outline: none;
+    color: #ffff;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    border-radius: 3px;
+}
+
+.downloadButton {
+    color: #ffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.formButton:hover {
+    background: #a2275d;
+    transition: ease-in-out 0.2s;
+}
+
+.downloadButton:hover {
+    transition-duration: ease-in-out 0.4s;
+    text-decoration: underline;
+    text-decoration-color: #a2275d;
+    text-decoration-thickness: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        margin-top: 8rem;
+    }
+
+    .contentTitle {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .content {
+        margin-top: 8rem;
+    }
+
+    .contentTitle {
+        font-size: 20px;
+    }
+}
